@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Friendly Sniff</title>
+    <!-- 2 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700|Kaushan+Script" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        //Smooth Scrolling Function
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href="#showcase">Home</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#section-c">About Us</a>
+            </li>
+            <li>
+                <a href="#section-d">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header Showcase -->
+    <header id="showcase" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+            <h1>Welcome to
+                <span class="welcome">Friendly Sniff</span>
+            </h1>
+            <p>
+                <em>It can be hard to run your dog when you have your own workout routine to do at a gym. No longer – our team
+                    runs your dog for you while you work out so they can stay in shape! First consultation run is free, so
+                    sign-up below</em>
+            </p>
+            <a href="#services" class="btn">Read More</a>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Section A -->
+        <section id="section-a" class="grid">
+            <div class="content-wrap">
+                <h2 id="services" class="content-title">A LifeStyle</h2>
+                <div class="content-text">
+                    <p>Friendlysniff believes that owning a pet is a lifestyle, one that can be made easier with the automation
+                        and delivery of pet food to your doorstep. We seek to extend and improve every aspect of being a
+                        pet owner with everyday conveniences.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section B -->
+        <h2 class="section-b-title">Services Offered</h2>
+        <section id="section-b" class="grid">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/62379/pexels-photo-62379.jpeg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Dog Running</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat illum accusamus omnis
+                                sit dolore saepe est inventore qui deserunt!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/356378/pexels-photo-356378.jpeg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Dog Wash</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat illum accusamus omnis
+                                sit dolore saepe est inventore qui deserunt!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/791862/pexels-photo-791862.jpeg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Dog Daycare</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat illum accusamus omnis
+                                sit dolore saepe est inventore qui deserunt!</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Section C -->
+        <section id="section-c" class="grid">
+            <div class="section-c-img"></div>
+            <div class="content-wrap">
+                <h2 class="content-title">Who are we</h2>
+                <div class="social-media">
+                    <a href="#" class="fa fa-facebook-square"></a>
+                    <a href="#" class="fa fa-twitter-square"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    </ul>
+                </div>
+                <h4>Michael Frame</h4>
+                <h5>CEO and Founder</h5>
+                <p>Michael has always been a bit passionate when it comes to animals… whether it is his dog Jada or the furry
+                    friends he keeps as company (don’t judge!). Whenever and wherever he sees and opportunity for making
+                    lives easier and more navigable for pet owners, he is drawn with laser-light focus. Originally founding
+                    this company back in 2013, Michael takes charge of keeping the company on focus and his team energized
+                    so they can all take the next step in their business growth.</p>
+                <hr>
+                <h4>Evan Sigvaldsen</h4>
+                <h5>CTO and Co-Founder</h5>
+                <p>Definately a parrot guy, Evan has his roots in animals from his very birth! Responsible for putting together
+                    the technology that drives Friendlysniff towards its ever changing ultimate goal, Evan is the go to guy
+                    for digital marketing, cart management, and general numeral ‘dogity’ that is involved in the every day
+                    function of a business such as this. Always up for a challenge and an outdoor adventure, you will often
+                    find him exploring the outdoors with his friends who have dogs or other adventurous buddies.
+                </p>
+                <hr>
+                <h4>Paula Frame</h4>
+                <h5>Logistics</h5>
+                <p>Paula is by far one of the most productive, warm-hearted, and insightful individuals here at Friendlysniff.
+                    Responsible for ensuring that the logistics and fulfillment of our product is running smoothly, Paula
+                    oversees all the details of the delivery function of the business. She has a wonderful mind for customer
+                    service and always sees the many different ways we can create a more encouraging customer experience.
+                    With a background in 4-Diamond Hotel service, our customers are lucky to have such a prepared woman at
+                    our helm!</p>
+                <hr>
+                <h4>Laura Frame</h4>
+                <h5>Accounting</h5>
+                <p>When you need numbers crunched for tax season this is the girl you turn too! Laura is responsible for lining
+                    up all the numbers for the business in a way that makes every business owner happy. Laura Frame enjoys
+                    spending her time studying and expanding her skillset while pursuing her degree in accounting, and will
+                    be a great asset to the Friendlysniff team.</p>
+            </div>
+        </section>
+        <!-- Section D -->
+        <section id="section-d" class="grid">
+            <div class="box">
+                <h2 class="content-title">Contact Us</h2>
+                <div class="container">
+                    <form action="action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="lname">Phone Number</label>
+                        <input type="text" id="phone" name="phonenumber" placeholder="Your phone number">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <h2 class="content-title">"Dogs do speak, but only to those who know how to listen."– Orhan Pamuk</h2>
+                <img src="https://images.pexels.com/photos/36436/dalmatians-dog-animal-head.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer" class="grid">
+        <div class="left-title">Friendly Sniff | All Rights Reserved &copy</div>
+        <div class="right-title">Project By
+            <a href="http://xxanemedia.com" target="_blank">| Xxane Web Design</a>
+        </div>
+    </footer>
+</body>
+
+</html>
