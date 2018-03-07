@@ -1,0 +1,120 @@
+/* Shared styles */
+.section {
+  text-align: center;
+  padding: 30px 80px;
+}
+.section h3 {
+  margin-top: 0;
+}
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext p {
+  color: #fff;
+}
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+.ptext .border.trans {
+  background-color: transparent;
+  text-align: center;
+}
+/* Pictures */
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.pic1 {
+  background-image: url('../images/background1.jpg');
+  min-height: 600px;
+  z-index: -1;
+}
+.pic2 {
+  background-image: url('../images/background2.jpg');
+  min-height: 400px;
+}
+.pic3 {
+  background-image: url('../images/background3.jpeg');
+  min-height: 400px;
+}
+.pic4 {
+  background-image: url('../images/background4.jpeg');
+  min-height: 400px;
+}
+/* Section 1 Service Cards */
+#services .fas {
+  font-size: 60px;
+  color: #016aa1;
+  padding: 30px 0 25px 0;
+}
+/* Section 2 About Us */
+#about h3 {
+  margin: 0;
+  padding-top: 15px;
+}
+#about .fas,
+#about .fab {
+  font-size: 30px;
+  color: #016aa1;
+}
+#about .fab {
+  padding-left: 10px;
+}
+#about h4,
+#about h5,
+#about p {
+  text-align: left;
+  margin: 0;
+}
+#about p {
+  padding-bottom: 15px;
+}
+/* Section 3 Contact */
+.btn {
+  width: 300px;
+  margin-top: 30px;
+}
+/* Footer */
+#main-footer {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #282e34;
+  color: #fff;
+}
+#main-footer p {
+  margin: 0;
+  padding: 25px;
+}
+/* Media stop Parallax lower res */
+@media (max-width: 600px) {
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4 {
+    background-attachment: scroll;
+  }
+}
